@@ -1,6 +1,7 @@
 package moonphase
 
 import (
+	"fmt"
 	"math"
 	"time"
 )
@@ -313,6 +314,7 @@ func (m *Moon) NextLastQuarter() float64 {
 }
 
 func (m *Moon) PhaseName() string {
+	fmt.Println("Phase name")
 	names := map[int]string{
 		0: "New Moon",
 		1: "Waxing Crescent",
